@@ -507,9 +507,11 @@
       </div>
     </footer>
 
-    <div class="backdrop">
+    <!-- MODAL WINDOW -->
+
+    <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-close-btn">
+        <button class="modal-close-btn" type="button">
           <svg
             class="modal-close-btn-icon"
             width="8"
@@ -585,13 +587,12 @@
               </svg>
             </div>
           </div>
-          <div class="form-field-wrapper">
+          <div class="form-field-wrapper comment-wrapper">
             <label class="modal-form-label" for="user-comment">Comment</label>
             <textarea
               class="modal-form-comment"
               name="user-comment"
               id="user-comment"
-              height="120"
               placeholder="Text input"
             ></textarea>
           </div>
@@ -599,12 +600,12 @@
             <input
               class="check-input visually-hidden"
               type="checkbox"
-              name="user-privacy-policy"
-              id="user-privacy-policy"
+              name="user-privacy"
+              id="user-privacy"
               value="true"
               required
             />
-            <label class="check-label" for="user-privacy-policy">
+            <label class="check-label" for="user-privacy">
               <span class="custom-check">
                 <svg class="custom-check-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-checkbox"></use>
